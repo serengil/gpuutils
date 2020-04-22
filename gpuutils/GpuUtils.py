@@ -87,7 +87,7 @@ def analyzeSystem(pandas_format = True, mock_response = None):
 		
 #---------------------------------
 
-def allocate(required_memory = 1024, gpu_count = 1):
+def allocate(required_memory = 1024, gpu_count = 1, framework = None):
 	
 	if gpu_count < 1:
 		raise ValueError("You must pass a positive value for gpu count but you passed ", gpu_count)
@@ -119,6 +119,30 @@ def allocate(required_memory = 1024, gpu_count = 1):
 			print(devices, " will be allocated")
 
 			os.environ["CUDA_VISIBLE_DEVICES"] = devices
+			
+			#----------------------------------
+			#avoid greedy approach based on framework
+			
+			if framework.lower() == "keras":
+				
+				import tensorflow as tf
+				import keras
+				config = tf.ConfigProto()
+				config.gpu_options.allow_growth = True
+				session = tf.Session(config=config)
+				keras.backend.set_session(session)
+				
+				print("Allow growth option in Keras is set to True to avoid to allocate all memory")
+			
+			elif framework.lower() == "tensorflow":
+				import tensorflow as tf
+				config = tf.ConfigProto()
+				config.gpu_options.allow_growth = True
+				session = tf.Session(config=config)
+				
+				print("Allow growth option in TensorFlow is set to True to avoid to allocate all memory")
+				
+			#----------------------------------
 
 		else:
 			print("Unavavailable resources. You will continue to work on CPU.")
