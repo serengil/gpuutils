@@ -22,16 +22,16 @@ df = GpuUtils.analyzeSystem() #this will return a pandas data frame
 
 Default configuration of system analysis returns a Pandas data frame.
 
-| gpu_index | total_memories_in_mb | available_memories_in_mb |	memory_usage_percentage | utilizations | power_usages_in_watts | power_capacities_in_watts |
-| ...       | ...                  | ...                      | ...                     | ...          | ...                   | ...                       |
-| 1         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-| 2         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-| 3         | 32480                | 32469                    |	0.0339                  | 0            | 44                    | 300                       |
-| 4         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-| 5         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-| 6         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-| 7         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-| 0         | 32480                | 31031                    |	4.4612                  | 7            | 56                    | 300                       |
+| gpu_index | total_memories_in_mb | available_memories_in_mb | memory_usage_percentage | utilizations | power_usages_in_watts | power_capacities_in_watts |
+| ---       | ---                  | ---                      | ---                     | ---          | ---                   | ---                       |
+| 1         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+| 2         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+| 3         | 32480                | 32469                    | 0.0339                  | 0            | 44                    | 300                       |
+| 4         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+| 5         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+| 6         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+| 7         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+| 0         | 32480                | 31031                    | 4.4612                  | 7            | 56                    | 300                       |
 
 ## Allocation
 
