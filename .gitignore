@@ -1,0 +1,12 @@
+__pycache__/*
+basemodels/__pycache__/*
+configurations/__pycache__/*
+build/
+dist/
+Pipfile
+Pipfile.lock
+.mypy_cache/
+.vscode/
+.idea/
+gpuutils.egg-info/
+gpuutils/__pycache__/*
