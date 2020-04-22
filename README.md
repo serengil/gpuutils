@@ -4,7 +4,7 @@ Working on a shared environment with multiple GPUs might be problematic. Advance
 
 ## Installation
 
-The easiest way to install GpuUtils is to install it via PyPI
+The easiest way to install GpuUtils is to install it via [PyPI](https://pypi.org/project/gpuutils).
 
 ```
 pip install gpuutils

@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: gpuutils
 Version: 0.0.1
-Summary: Gpu Utils
+Summary: Gpu Utils: Simple Tool for GPU Analysis and Allocation
 Home-page: https://github.com/serengil/gpuutils
 Author: Sefik Ilkin Serengil
 Author-email: serengil@gmail.com
@@ -10,28 +10,36 @@ Description: # GpuUtils
         
         Working on a shared environment with multiple GPUs might be problematic. Advanced frameworks apply greedy approach and they tend to allocate all GPUs and all memory of your system. GpuUtils helps you to find the best GPU on your system to allocate. It also provides a gpu related information in a structure format.
         
+        ## Installation
+        
+        The easiest way to install GpuUtils is to install it via PyPI
+        
+        ```
+        pip install gpuutils
+        ```
+        
         ## Analyzing system
         
-        Running **nvidia-smi** command in command prompt allows users to monitor GPU related information such as memory and utilization. Herein, system analysis function loads GPU related information into a pandas data frame or json.
+        Running **nvidia-smi** command in the command prompt allows users to monitor GPU related information such as memory and utilization. Herein, system analysis function loads GPU related information into a pandas data frame or json array.
         
         ```python
-        #!pip install gpuutils
         from gpuutils import GpuUtils
-        df = GpuUtils.analyzeSystem()
-        #dict = GpuUtils.analyzeSystem(pandas_format = False)
+        df = GpuUtils.analyzeSystem() #this will return a pandas data frame
+        #dict = GpuUtils.analyzeSystem(pandas_format = False) #this will return a json array
         ```
         
         Default configuration of system analysis returns a Pandas data frame.
         
-        | gpu_index | total_memories_in_mb | available_memories_in_mb |	memory_usage_percentage | utilizations | power_usages_in_watts | power_capacities_in_watts |
-        | 1         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-        | 2         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-        | 3         | 32480                | 32469                    |	0.0339                  | 0            | 44                    | 300                       |
-        | 4         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-        | 5         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-        | 6         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-        | 7         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
-        | 0         | 32480                | 31031                    |	4.4612                  | 7            | 56                    | 300                       |
+        | gpu_index | total_memories_in_mb | available_memories_in_mb | memory_usage_percentage | utilizations | power_usages_in_watts | power_capacities_in_watts |
+        | ---       | ---                  | ---                      | ---                     | ---          | ---                   | ---                       |
+        | 1         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+        | 2         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+        | 3         | 32480                | 32469                    | 0.0339                  | 0            | 44                    | 300                       |
+        | 4         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+        | 5         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+        | 6         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+        | 7         | 32480                | 32469                    | 0.0339                  | 0            | 43                    | 300                       |
+        | 0         | 32480                | 31031                    | 4.4612                  | 7            | 56                    | 300                       |
         
         ## Allocation
         

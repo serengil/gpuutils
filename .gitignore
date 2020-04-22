@@ -8,5 +8,6 @@ Pipfile.lock
 .mypy_cache/
 .vscode/
 .idea/
-gpuutils.egg-info/
+gpuutils.egg-info
+gpuutils.egg-info/*
 gpuutils/__pycache__/*
