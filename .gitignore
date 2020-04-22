@@ -10,5 +10,5 @@ Pipfile.lock
 .idea/
 gpuutils.egg-info
 gpuutils.egg-info/*
-gpuutils/__pycache__
+gpuutils/__pycache__/
 gpuutils/__pycache__/*
