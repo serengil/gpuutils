@@ -44,6 +44,14 @@ GpuUtils.allocate() #this tries to allocate a GPU having 1GB memory
 #GpuUtils.allocate(required_memory = 10000, gpu_count=1)
 ```
 
+# To avoid greedy approach
+
+Advanced frameworks such as TensorFlow tend to allocate all memory. You can avoid this approach if you pass the framework argument in allocate function. In this way, the framework will use the gpu memory as much as needed. Currently, keras and tensorflow frameworks are supported in allocate function.
+
+```python
+GpuUtils.allocate(framework = 'keras')
+```
+
 # Support
 
 There are many ways to support a project - starring⭐️ the GitHub repos is just one.
