@@ -15,8 +15,7 @@ mock_response = 'Tue Apr 21 09:58:12 2020	   \n+--------------------------------
 
 df = GpuUtils.analyzeSystem(mock_response = mock_response, pandas_format = False)
 
-print(df)
-
+print(type(df))
 print(df)
 
 print("--------------------------------------------")

@@ -12,17 +12,18 @@ pip install gpuutils
 
 ## Analyzing system
 
-Running **nvidia-smi** command in the command prompt allows users to monitor GPU related information such as memory and utilization. Herein, system analysis function loads GPU related information into a pandas data frame or json.
+Running **nvidia-smi** command in the command prompt allows users to monitor GPU related information such as memory and utilization. Herein, system analysis function loads GPU related information into a pandas data frame or json array.
 
 ```python
 from gpuutils import GpuUtils
-df = GpuUtils.analyzeSystem()
-#dict = GpuUtils.analyzeSystem(pandas_format = False)
+df = GpuUtils.analyzeSystem() #this will return a pandas data frame
+#dict = GpuUtils.analyzeSystem(pandas_format = False) #this will return a json array
 ```
 
 Default configuration of system analysis returns a Pandas data frame.
 
 | gpu_index | total_memories_in_mb | available_memories_in_mb |	memory_usage_percentage | utilizations | power_usages_in_watts | power_capacities_in_watts |
+| ...       | ...                  | ...                      | ...                     | ...          | ...                   | ...                       |
 | 1         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
 | 2         | 32480                | 32469                    |	0.0339                  | 0            | 43                    | 300                       |
 | 3         | 32480                | 32469                    |	0.0339                  | 0            | 44                    | 300                       |
