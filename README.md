@@ -2,6 +2,16 @@
 
 Working on a shared environment with multiple GPUs might be problematic. Advanced frameworks apply greedy approach and they tend to allocate all GPUs and all memory of your system. GpuUtils helps you to find the best GPU on your system to allocate. It also provides a gpu related information in a structure format.
 
+## What GpuUtils Offer
+
+Regular frameworks tend to allocate GPU memory.
+
+<p align="center"><img src="https://raw.githubusercontent.com/serengil/gpuutils/master/demo/gpuutils-off.png" width="95%" height="95%"></p>
+
+Enabling GpuUtils provides you not to use GPU resources greedy
+
+<p align="center"><img src="https://raw.githubusercontent.com/serengil/gpuutils/master/demo/gpuutils-on.png" width="95%" height="95%"></p>
+
 ## Installation
 
 The easiest way to install GpuUtils is to install it via [PyPI](https://pypi.org/project/gpuutils).
