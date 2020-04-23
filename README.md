@@ -1,6 +1,8 @@
 # GpuUtils
 
-Working on a shared environment with multiple GPUs might be problematic. Advanced frameworks apply greedy approach and they tend to allocate all GPUs and all memory of your system. GpuUtils helps you to find the best GPU on your system to allocate. It also provides a gpu related information in a structure format.
+[![Downloads](https://pepy.tech/badge/gpuutils)](https://pepy.tech/project/gpuutils)
+
+Working on a shared and distributed environment with multiple GPUs might be problematic. Advanced frameworks apply greedy approach and they tend to allocate all GPUs and all memory of your system. GpuUtils helps you to find the best GPU on your system to allocate. It also provides a gpu related information in a structure format.
 
 ## Installation
 
