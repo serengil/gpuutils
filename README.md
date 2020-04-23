@@ -6,11 +6,11 @@ Working on a shared environment with multiple GPUs might be problematic. Advance
 
 Regular frameworks tend to allocate all GPU memory.
 
-<p align="center"><img src="https://raw.githubusercontent.com/serengil/gpuutils/master/demo/gpuutils-off.png" width="95%" height="95%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/serengil/gpuutils/master/demo/gpuutils-off.png" width="100%" height="100%"></p>
 
 Enabling GpuUtils provides you not to use GPU resources greedy
 
-<p align="center"><img src="https://raw.githubusercontent.com/serengil/gpuutils/master/demo/gpuutils-on.png" width="95%" height="95%"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/serengil/gpuutils/master/demo/gpuutils-on.png" width="100%" height="100%"></p>
 
 ## Installation
 
