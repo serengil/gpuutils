@@ -2,8 +2,6 @@
 
 Working on a shared environment with multiple GPUs might be problematic. Advanced frameworks apply greedy approach and they tend to allocate all GPUs and all memory of your system. GpuUtils helps you to find the best GPU on your system to allocate. It also provides a gpu related information in a structure format.
 
-<p align="center"><img src="https://sefiks.com/wp-content/uploads/2020/04/gpuutils-summary.gif" width="95%" height="95%"></p>
-
 ## Installation
 
 The easiest way to install GpuUtils is to install it via [PyPI](https://pypi.org/project/gpuutils).
