@@ -4,7 +4,7 @@ Working on a shared environment with multiple GPUs might be problematic. Advance
 
 ## What GpuUtils Offer
 
-Regular frameworks tend to allocate GPU memory.
+Regular frameworks tend to allocate all GPU memory.
 
 <p align="center"><img src="https://raw.githubusercontent.com/serengil/gpuutils/master/demo/gpuutils-off.png" width="95%" height="95%"></p>
 
